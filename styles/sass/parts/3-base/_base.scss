@@ -1,0 +1,28 @@
+@font-face {
+  font-family:'WorkSans';
+  src: url(/Fonts/WorkSans/WorkSans-Medium.otf);
+}
+html{
+  font-size: 62.5%;
+
+}
+body {
+  font-family: 'WorkSans', serif,  Times;
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: #333;
+}
