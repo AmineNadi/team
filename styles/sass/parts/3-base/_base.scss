@@ -9,6 +9,7 @@ html{
 body {
   font-family: 'WorkSans', serif,  Times;
   color: #333;
+  font-size: 1.4rem;
 }
 
 img {
@@ -25,4 +26,40 @@ a:hover,
 a:active {
   text-decoration: none;
   color: #333;
+}
+.icon-panier{
+  width: 2.3rem;
+  height: 3.2rem;
+}
+svg{
+cursor: pointer;
+}
+.icon-search {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.icon-heart{
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: #1c31a0;
+}
+.logo-nav {
+  width: 10.2rem;
+  height: 6.9rem;
+}
+.icon-right{
+  width: 49px;
+  height: 24px;
+  transition:all 0.1s ease-in ;
+}
+.icon-right:hover{
+  
+  background-color: #1c31a0;
+  border-radius: 15px;
+}
+.cls-blue{
+  fill: #1c31a0;
+}
+.icon-right:hover .cls-blue{
+fill: #fff;
 }

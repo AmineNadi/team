@@ -1,0 +1,124 @@
+.navbar .menu-femme{
+    position: absolute;
+    width: 100%;
+    left:0;
+    padding:30px 30px 30px 30px ;
+    background-color: #fff;
+    z-index: -1;
+    opacity: 0;
+    top: 100%;
+    transition: 0.2s ease;
+
+  }
+  .navbar ul > li:hover .menu-femme{
+    opacity: 1;
+    z-index: 100;
+  }
+  .br-top{
+    border-top:0.5px solid rgba(167, 163, 163, 0.404);  
+  }
+
+  .vl {
+    border-left: 0.5px solid rgba(167, 163, 163, 0.404);  
+  }
+  .con li a{
+    text-align: center;
+    width: 100%;
+    padding: 20px 20px;
+  }
+  .con{
+      padding-left: 0;
+  }
+  .con span{
+    text-decoration: underline;
+    font-size: 14px;
+  }
+  .con h3{
+      justify-content: flex-start;
+  }
+  .chauss{
+      margin-left: 2px;
+  }
+  .chauss span{
+    font-size: 14px;
+    
+  }
+  .chauss .col{
+    padding: 6px 0px;
+  }
+  .np{
+    padding-top: 20px;
+    font-size: 20px;
+  }
+ .col-lg-4 span{
+    font-size: 14px;
+    padding: 20px;
+  }
+  .prefer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .cat ol li{
+    list-style-type: none;
+    padding: 6px 0;
+  }
+  .navbar ul li .cat {
+    padding-left: 65.4px;
+    margin-right: 20px;
+  }
+  .cat ol {
+    width: 120px;
+    padding: 0;
+  }
+  .rounded-img{
+    border-radius: 50%;
+    width: 120%;
+    height: 120px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+  }
+  .np .col-lg-4{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+   overflow: hidden;
+   position: relative;
+    padding: 0 40px;
+  }
+  .np .col-lg-4:hover img {
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  
+  .navbar .menu-perso{
+    position: absolute;
+    width: 100%;
+    left:0;
+    padding:30px 0 30px 5px ;
+    background-color: #fff;
+    z-index: -1;
+    opacity: 0;
+    top: 100%;
+    transition: 0.2s ease; 
+  }
+  .navbar ul > li:hover .menu-perso{
+    opacity: 1;
+    z-index: 100;
+  }
+  .ani-img{
+    transition: all 0.4s ease;
+    cursor: pointer;
+  }
+  .img-perso:hover img {
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  .img-perso{
+  overflow: hidden;
+   position: relative;
+  }

@@ -10,7 +10,6 @@
   font-size: 1.4rem;
 }
 .navbar {
- 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,27 +44,20 @@
   position: relative;
   
 }
-.logo-nav {
-  width: 10.2rem;
-  height: 6.9rem;
-}
+
 .nav-one{
-  min-width: 40%;
+  flex: 1;
   justify-content: flex-start;
 }
 .nav-two{
-  min-width: 40%;
+  flex: 1;
   justify-content: flex-end;
 }
 .icon-toggle {
   width: 4rem;
   height: 2.5rem;
 }
-.icon-panel {
-  width: 2.3rem;
-  height: 3.2rem;
-  cursor: pointer;
-}
+
 .border {
   width: 70px;
   height: 30px;
@@ -73,10 +65,7 @@
   border-radius: 15px;
   border: solid 1px #cecfd0;
 }
-.icon-search {
-  width: 1.5rem;
-  height: 1.5rem;
-}
+
 .l-car {
   display: flex;
   position: relative;
@@ -104,49 +93,7 @@
 }
 .navbar li a:hover {
   color: $mainBlue;
-  
 }
-.navbar ul > li:hover .hedin{
-  opacity: 1;
-  z-index: 100;
-  
-}
-.navbar .hedin{
-  position: absolute;
-  width: 100%;
-  left:0;
-  padding:30px;
-  background-color: #fff;
-  z-index: -1;
-  opacity: 0;
-  top: 100%;
-  transition: 0.5s ease;
-}
-
-
-.vl {
-  border-left: 3px solid gray;
-}
-.con{
-  text-align: center;
-  width: 100%;
-  padding: 20px 20px;
- 
-  
-}
-
-.chauss a{
-  
-  font-size: 14px;
-  padding: 2px 2px;
-  
-}
-.np{
-  font-size: 20px;
-}
-
-
-
 
 @media only screen and (max-width: 1024px) {
   .site-header__menu-icon {
@@ -182,29 +129,25 @@
     top: 20px;
     transform-origin: left center;
   }
- 
-  
-  .open .site-header__menu-icon span:nth-child(1) {
+
+  .open.site-header__menu-icon span:nth-child(1) {
     transform: rotate(45deg);
     top: 4px;
     left: 3px;
   }
-  .open .site-header__menu-icon span:nth-child(2) {
+  .open.site-header__menu-icon span:nth-child(2) {
     width: 0%;
     opacity: 0;
   }
-  .open .site-header__menu-icon span:nth-child(3) {
+  .open.site-header__menu-icon span:nth-child(3) {
     transform: rotate(-45deg);
     top: 25px;
     left: 3px;
   }
+  .open.navbar ul li {display: block;}
   
   .bg-header p {
     font-size: 1.3rem;
-  }
-  .icon-panel {
-    width: 40px;
-    height: 43px;
   }
   .navbar{
     display: block;
@@ -221,30 +164,26 @@
     display: flex;
         flex-direction: column;
         align-items: flex-start;
-        
-        
-
   }
   .navbar .nav-one{
+    
     padding-top: 60px;
   }
   .navbar ul li {
     display: none;
     padding: 0;
   }
-  
-  .navbar ul .n-show{
-    display: none;
-  }
   .navbar ul li a{
     display: block;
   }
   
-  .panel{
+  .icon-panier{
     display: block;
         position: absolute;
         top: 20px;
         right: 20px;
+        width: 40px;
+    height: 43px;
   }
 }
 @include media-breakpoint-down(sm) {

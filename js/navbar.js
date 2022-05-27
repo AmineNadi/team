@@ -1,9 +1,8 @@
 import $ from 'jquery';
-$(function(){
-    $('body').on('click','.site-header__menu-icon', function(){
-        $('.site-header__menu-icon').toggleClass('open');
 
-	});
-});
-
-console.log("cc---------------")
+$(function() {
+    $("body").on('click','.site-header__menu-icon','.navbar ul li',function() {
+      $(this).toggleClass("open");
+      $('.navbar ul li').toggleClass("open");
+    });
+  });
