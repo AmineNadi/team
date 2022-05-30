@@ -2,6 +2,9 @@
     .menu-mt{
         display: none;
     }
+    .menu-perso-mt{
+        display :none;
+    }
 
 }
 @media only screen and (max-width: 1026px){
@@ -28,10 +31,11 @@ body{
 .open.menu-mt{
     transform: translateX(0);
     opacity: 1;
-    z-index: 1;
+    
 }
+
 .recherch-mt{
-    height: 65px;
+    height: 100%;
     width: 100%;
     overflow: auto;
     padding: 0;
@@ -45,7 +49,7 @@ body{
     border:0;
     outline:0;
     width: 100%;
-    height: 100%;
+    height: 65px;
     
 }
 .recherch-mt input:focus{
@@ -60,33 +64,43 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-height:80px ;
+   
 }
 .br-buttom{
     border-bottom:0.5px solid rgba(167, 163, 163, 0.404);  
 }
 .homme-mt{
-    max-height: 80px;
+    
 }
 .enfant-mt{
-    max-height: 80px;
+  
 }
 .marque-mt{
-    max-height: 80px;
+  
 }
 .perso-mt{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-height:80px
+
 }
 .suive-mt{
-    max-height: 285px;
+   
 }
-.active.menu-perso{
-    opacity: 1;
-    z-index: 100;
+.menu-perso{
+    display: none;
 }
+.menu-perso-mt{
+    display:none;
+}
+.active.menu-perso-mt{
+ display: block;
+}
+.active.menu-mt{
+  display: none;
+   }
+
+
 .suive-mt ul{
     padding-top:0!important ;
 }
@@ -99,7 +113,7 @@ margin-bottom:1.5rem;
 }
 .footer-mt{
     width: 100%;
-    height: 65px;
+   
     background-color: #fbf9f7;
     display: flex;
     justify-content: space-evenly;

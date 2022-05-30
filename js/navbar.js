@@ -8,9 +8,3 @@ $(function(){
 	});
     
 });
-$(function(){
-    
-        $('body').on('click','.perso-mt', function(){
-            $('.menu-perso').toggleClass('active');
-        });
-});

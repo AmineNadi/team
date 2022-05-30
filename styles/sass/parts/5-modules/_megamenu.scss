@@ -45,7 +45,10 @@
     
   }
   .chauss .col{
-    padding: 6px 0px;
+    padding: 20px 0px;
+  }
+  .chauss .col a{
+    padding-left: 0!important;
   }
   .np{
     padding-top: 20px;
@@ -60,6 +63,20 @@
     flex-direction: column;
     justify-content: center;
   }
+  .cat{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .cat ol{
+    padding-left: 0!important;
+    padding-top: 10px;
+  }
+  .cat ol a{
+    padding-left: 0!important;
+    font-weight: 400;
+    
+  }
   .cat ol li{
     list-style-type: none;
     padding: 6px 0;
@@ -68,10 +85,7 @@
     padding-left: 65.4px;
     margin-right: 20px;
   }
-  .cat ol {
-    width: 120px;
-    padding: 0;
-  }
+  
   .rounded-img{
     border-radius: 50%;
     width: 120%;
