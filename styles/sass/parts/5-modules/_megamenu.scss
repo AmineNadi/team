@@ -17,6 +17,7 @@
   .br-top{
     border-top:0.5px solid rgba(167, 163, 163, 0.404);  
   }
+ 
 
   .vl {
     border-left: 0.5px solid rgba(167, 163, 163, 0.404);  
@@ -111,6 +112,7 @@
   }
   .ani-img{
     transition: all 0.4s ease;
+    width: 100%;
     cursor: pointer;
   }
   .img-perso:hover img {
@@ -121,4 +123,7 @@
   .img-perso{
   overflow: hidden;
    position: relative;
+  }
+  .menu-perso a{
+    padding: 0!important;
   }

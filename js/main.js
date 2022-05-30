@@ -1,2 +1,1 @@
-import $ from 'jquery'
-import 'navbar'
+import './navbar'

@@ -28,8 +28,44 @@ a:active {
   color: #333;
 }
 .icon-panier{
-  width: 2.3rem;
-  height: 3.2rem;
+  width: 2.9rem;
+  height: 3rem;
+  
+}
+.panier{
+  padding-left: 1rem;
+}
+@media only screen and (max-width: 767px)  {
+  .panier{
+    padding-left: 0;
+  }
+  .icon-panier{
+    width: 3.1rem!important;
+    height: 3.5rem!important;
+  }
+  .logo-nav{
+    width: 75.3px!important;
+  height: 44.4px!important;
+  }
+  .site-header__menu-icon{
+    width: 23px!important;
+  height: 15px!important;
+  }
+}
+@media only screen and (max-width: 1026px)  {
+  .icon-panier{
+    width: 4rem!important;
+    height: 4.3rem!important;
+  }
+  .panier{
+    padding-left: 0;
+  }
+  .logo-nav{
+    padding-top:5px;
+    width: 103.1px!important;
+  height: 60.7px!important;
+  }
+  
 }
 svg{
 cursor: pointer;
@@ -50,12 +86,13 @@ cursor: pointer;
 .icon-right{
   width: 49px;
   height: 24px;
-  transition:all 0.1s ease-in ;
+  transition:all 0.3s ease-in ;
+  border-radius: 15px;
 }
 .icon-right:hover{
   
   background-color: #1c31a0;
-  border-radius: 15px;
+
 }
 .cls-blue{
   fill: #1c31a0;
