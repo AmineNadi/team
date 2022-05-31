@@ -15,6 +15,7 @@ body{
 
 .menu-mt{
     width: 100%;
+    height: 100vh;
     overflow: hidden;
     transform: translateX(-20%);
     transition: all 0.4s ease;
@@ -35,13 +36,13 @@ body{
 }
 
 .recherch-mt{
-    height: 100%;
-    width: 100%;
+    width: 100vw;
     overflow: auto;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: -26px;
 }
 .recherch-mt input{
     background-color: #fbf9f7!important;
@@ -49,8 +50,8 @@ body{
     border:0;
     outline:0;
     width: 100%;
-    height: 65px;
-    
+    height: 100%;
+    padding: 2.8rem 0;
 }
 .recherch-mt input:focus{
     outline:none!important;
@@ -112,12 +113,15 @@ padding: 1rem 0;
 margin-bottom:1.5rem;
 }
 .footer-mt{
-    width: 100%;
-   
     background-color: #fbf9f7;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    top: calc(100vh - 141px);
+    height: 65px;
+    position: absolute;
+    width: 100vw;
+    margin-left: -2.6rem;
 }
 .footer-mt ul{
     list-style: none;

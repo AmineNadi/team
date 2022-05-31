@@ -6,5 +6,14 @@ $(function(){
         $('.menu-mt').toggleClass('open');
         $('.bg-header').toggleClass('open');
 	});
-    
+    $('body').on('click','.select-langue > span', function(){
+        $('.menu-langue').toggleClass('active');
+	});
+    $('body').on('click','.menu-sel-langue', function(){
+        $('.menu-sel-langue .dropdown-list').toggleClass('open-drop');
+	});
+    $('body').on('click','.menu-sel-curency', function(){
+        $('.menu-sel-curency .dropdown-list').toggleClass('open-drope');
+	});
+  
 });
