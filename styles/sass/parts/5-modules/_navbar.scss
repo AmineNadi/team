@@ -26,13 +26,13 @@
 .navbar ul li{
   padding: 2.2rem 0;
 }
-.navbar .nav-one li a {
+.navbar .nav-left-sec li a {
   font-size: 1.3rem;
   padding: 0 1.1rem;
   letter-spacing: 0.3px;
   font-weight: normal;
 }
-.navbar .nav-two li a {
+.navbar .nav-right-sec li a {
   font-size: 1.4rem;
   padding: 0 1.1rem;
   letter-spacing: 0.3px;
@@ -51,11 +51,11 @@
   
 }
 
-.nav-one{
+.nav-left-sec{
   flex-grow: 1;
   justify-content: flex-start;
 }
-.nav-two{
+.nav-right-sec{
   flex-grow: 1;
   justify-content: flex-end;
 }

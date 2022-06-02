@@ -141,6 +141,7 @@
   }
   .select-langue{
     position: relative;
+    
   }
   .select-langue > span {
     cursor: pointer;
@@ -173,6 +174,10 @@
     padding: 10.5px 0;
     letter-spacing: 1px;
   }
+  .dropdown{
+    position: relative;
+    cursor: pointer;
+  }
   .dropdown-select{
     border: 1px solid #ced4da;
     padding: 1rem;
@@ -185,23 +190,26 @@
     top: 110%;
     left: 0;
     right: 0;
-    opacity: 0;
     background-color: #fff;
-    display: none;
-    z-index: 400;
     cursor: pointer;
+    transition: .4s linear .2s;
+    height: 0;
+    display: none;
   }
-  .open-drop .dropdown-list:nth-child(1){
-    opacity: 1;
+  .dropdown-list.activat{
     display: block;
-    z-index: 2000;
+    height: 100%;
+    z-index: 100;
   }
-  .open-drope .dropdown-list:nth-child(2){
-    opacity: 1;
-    display: block;
-    z-index: 2000;
+  .dropdown-list__item{
+    transition: .3s ease-in-out;
+    background-color: #fff;
   }
-
+  .dropdown-list__item:hover,
+  .dropdown-list__item.selected{
+    color: #fff;
+    background-color: rgb(32, 116, 243);
+  }
   .dropdown-list__item{
     padding: 1rem;
     border: 1px solid #ced4da;
@@ -219,5 +227,52 @@
     font-size: 1.6rem;
     background-color: #1c31a0;
     color: #fff;
+  }
+
+  .dropdowne{
+    position: relative;
+    cursor: pointer;
+  }
+  .dropdown-selecte{
+    border: 1px solid #ced4da;
+    padding: 1rem;
+    cursor: pointer;
+  }
+  .dropdown-liste{
+    width: 100%;
+    text-align: left;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    cursor: pointer;
+    transition: .4s linear .2s;
+    height: 0;
+    display: none;
+  }
+  .dropdown-liste.activate{
+    display: block;
+    height: 100%;
+    z-index: 100;
+  }
+  .dropdown-list__iteme{
+    transition: .3s ease-in-out;
+    background-color: #fff;
+  }
+  .dropdown-list__iteme:hover,
+  .dropdown-list__iteme.selectede{
+    color: #fff;
+    background-color: rgb(32, 116, 243);
+  }
+  .dropdown-list__iteme{
+    padding: 1rem;
+    border: 1px solid #ced4da;
+  }
+  .dropdown-list__iteme:nth-child(1){
+    border-bottom: none!important;
+  }
+  .dropdown-list__iteme:nth-child(2){
+    border-bottom: none!important;
   }
   
