@@ -1,0 +1,95 @@
+.rassurance{
+    margin-left: 1.4rem;
+    margin-right: 1.4rem;
+    margin-bottom: 4rem;
+    display: flex;
+    
+}
+.rassurance-item{
+    width: 25%;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+
+    &:last-child:after {
+        display: none;
+    }
+ 
+     span{
+        display: block;
+        font-size: 1.4rem;
+        &:first-of-type{
+            font-size: 1.8rem;
+            font-family: $font-family-dm;
+        }
+    }
+    
+    @include respond-above(md){
+        &::after{
+            content: "•";
+            margin-bottom: 10px;
+            position: absolute;
+            right: 0;
+        }
+    }
+
+    img {
+        display: block;
+        margin: 0 auto 2px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@include respond-below(md){
+    .rassurance{
+        margin-left: 2.6rem;
+        margin-right: 2.6rem;
+        margin-bottom: 3rem;
+        align-items: baseline;
+        
+    }
+
+    .rassurance-item {
+        img {
+            margin-bottom: 7px;
+        }
+        span {
+            font-size: 1.3rem;
+            &:first-of-type {
+                font-size: 1.7rem;
+            }
+        }
+    }
+
+}
+
+@include respond-below(sm){
+    .rassurance{
+        flex-wrap: wrap;
+        margin: 0 1.4rem 3rem;
+    }
+
+    .rassurance-item {
+        width: 50%;
+        img {
+            margin-bottom: 9.5px;
+        }
+        span {
+            font-size: 1.2rem;
+            &:first-of-type {
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+}

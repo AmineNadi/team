@@ -2,16 +2,24 @@
 // 
 // 0. Site settings
 @import "settings/settings";
+@import "settings/mixins";
 
+
+@import "base/normalize";
 @import "base/base";
 @import "base/grid";
+@import "base/font";
 // @import "base/typo";
 // @import "base/fonts";
 
 @import "layout/header";
-// @import "layout/footer";
+@import "layout/footer";
 
 @import "module/header";
+@import "module/select";
+@import "module/footer";
+@import "module/rassurance";
+@import "module/instagram";
 // @import "components/form";
 // @import "components/buttons";
 // @import "components/accordion";
