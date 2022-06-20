@@ -2,6 +2,15 @@
   position: relative;
   
 }
+.border-sel{
+  width: 94px;
+  height: 30px;
+  text-align: center;
+  font-size: 1.3rem;
+  border-radius: 15px;
+  border: solid 1px #cecfd0;
+  color: rgb(33, 37, 41) ;
+}
 .select-langue > span {
   cursor: pointer;
 }
@@ -42,7 +51,7 @@
   padding: 1rem;
   cursor: pointer;
 }
-.dropdown-list{
+.dropdown-list-one{
   width: 100%;
   text-align: left;
   position: absolute;
@@ -55,7 +64,7 @@
   height: 0;
   display: none;
 }
-.dropdown-list.activat{
+.up.dropdown-list-one{
   display: block;
   height: 100%;
   z-index: 100;

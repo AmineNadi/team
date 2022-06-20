@@ -2,8 +2,17 @@
     background-color:$main-blue;
     padding: 1.2rem 0;
 }
+.scrolled.banner{
+  display: none;
+}
+.scrolled.header-content{
+  background-color: $main-white!important;
+  transition: background-color 200ms linear;
+}
 .header-content{
-    position: relative;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
     .logo{
       padding: 0.9rem 0;
     }
@@ -159,19 +168,6 @@
 .megamenu-catalogue{
   width: 25%;
   padding: 0 1.5rem;
-  .icon-right{
-    width: 49px;
-    height: 24px;
-    transition:all 0.3s ease-in ;
-    border-radius: 15px;
-    fill: #1c31a0;
-      &:hover{
-      background-color: #1c31a0;
-      }
-      &:hover .cls-blue{
-        fill: $main-white;
-      }
-  }
 }
 .img-catalogue{
   overflow: hidden;
@@ -186,6 +182,7 @@
       transition: all 0.4s ease;
       vertical-align: middle;
       cursor: pointer;
+      width:100%;
     }
     li.list-inline-item.sub{
       cursor: pointer;
@@ -386,9 +383,6 @@
           }
       }
     }
-    h3{
-      font-size: 2.6rem;
-    }
     .header-content nav ul li span{
       font-size: 1.6rem;
     }
@@ -475,9 +469,7 @@
     display: none;
   }
   
-  .footer-content{
-    padding: 3rem 0!important;
-  }
+  
   
      .suive-mt {
       display: block;
@@ -546,9 +538,6 @@
     .header-content .logo {
       padding: 0.4rem 0;
   }
-    h3{
-      font-size: 1.6rem;
-    }
     .menu-formes .formes a span{
       font-size: 1.4rem!important;
     }
@@ -588,9 +577,6 @@
     }
     .global-padding{
       padding: 0 1.5rem;
-    }
-    .footer-content{
-      padding: 0 0 3.4rem 0!important;
     }
     .header-content-mt{
       height: calc(100vh - 56px)!important;

@@ -76,11 +76,12 @@
 @include respond-below(sm){
     .rassurance{
         flex-wrap: wrap;
-        margin: 0 1.4rem 3rem;
+        margin: 0 1.4rem 0;
     }
 
     .rassurance-item {
         width: 50%;
+        margin-bottom: 3rem;
         img {
             margin-bottom: 9.5px;
         }

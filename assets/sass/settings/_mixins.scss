@@ -20,6 +20,28 @@
     }
   }
 
+
+  @mixin respond-between($breakpoint-min,$breakpoint-max) {
+
+    // If the breakpoint exists in the map.
+    @if map-has-key($breakpoints, $breakpoint-min) and map-has-key($breakpoints, $breakpoint-max) {
+  
+      // Get the breakpoint value.
+      $breakpoint-min-value: map-get($breakpoints, $breakpoint-min);
+      $breakpoint-max-value: map-get($breakpoints, $breakpoint-max);
+      // Write the media query.
+      @media (min-width: $breakpoint-min-value) and (max-width: $breakpoint-max-value){
+        @content;
+      }
+  
+    // If the breakpoint doesn't exist in the map.
+    } @else {
+  
+      // Log a warning.
+      @warn 'Invalid breakpoint: #{$breakpoint}.';
+    }
+  }
+
   @mixin respond-below($breakpoint) {
 
     // If the breakpoint exists in the map.

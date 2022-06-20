@@ -1,0 +1,72 @@
+.avis{
+    margin: 10rem 4.5rem;
+    display: flex;
+    .avis-item{
+        border-radius: 20px;
+        border: solid 1px #cecfd0;
+        background-color: $main-white;
+        padding: 2.6rem 3rem 2.3rem;
+        margin: 0 1.4rem;
+        .avis-item-header{
+            display: flex;
+            align-items: center;
+            margin-bottom: 2.6rem;
+            >span{
+                font-size: 11rem;
+                margin-right: 2.6rem;
+                text-align: left;
+                height: 70px;
+                color: $main-blue;
+            }
+            .name-stars{
+                position: relative;
+                padding-left: 6.3rem;
+                &::before{
+                    position: absolute;
+                    left: 0;
+                    font-size: 9.5rem;
+                    color: $main-blue;
+                    top: -10px;
+                    content: "“";
+                    line-height: 1;
+                }
+                .name-avis{
+                    font-weight: 700;
+                    display: block;
+                }
+                .stars-avis{
+                    color: $main-blue;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+@include respond-below(md){
+    .avis{
+        margin: 5rem 2rem;
+    .avis-item{
+        padding:1.8rem 1.9rem 1.5rem 2rem;
+        &:last-child{
+            display:none;
+        }
+        .avis-item-header{
+            margin-bottom: 1.7rem;
+        }
+    }
+}
+}
+@include respond-below(sm){
+    .avis{
+        margin: 6rem 1.5rem;
+    .avis-item{
+        padding:2.5rem 2rem 1.5rem ;
+        &:nth-child(2),&:nth-child(3){
+            display: none;
+        }
+        .avis-item-header{
+            margin-bottom: 1.7rem;
+        }
+    }
+}
+}

@@ -1,0 +1,101 @@
+.slideshow{
+    margin-bottom: 10.94rem;
+
+    .slideshow-img{
+    
+        width: 62.95%;
+    }
+    .slideshow-content{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 36.38%;
+        .slideshow-item{
+            width: 58.64%;
+            position: relative;
+        }
+
+        .control-carousel{
+            right: -4rem;
+            bottom: 6.02rem;
+            width: auto;
+            > span{
+                margin: 0 1.39rem;
+            }
+        }
+        h1{
+            margin-bottom: 1.4rem;
+        }
+        h3{
+            margin-bottom: 0.6rem;
+            letter-spacing: 1px;
+        }
+        .btn-rectangle{
+            padding: 1.12rem 6rem 1.35rem;
+        }
+    }
+}
+@include respond-below(md){
+    .slideshow{
+        margin-bottom: 4.84rem;
+        flex-direction: column;
+    
+        .slideshow-img{
+        
+            width: 100%;
+            margin-bottom: 4.7rem;
+        }
+        .slideshow-content{
+            width: 100%;
+            padding-bottom: 10.4rem;
+            .slideshow-item{
+                width: auto;
+                align-items: center;
+                text-align: center;
+            }
+    
+            .control-carousel{
+                left: 30%;
+                top: 100%;
+                right: 0;
+                bottom: -8.4rem;
+                > span{
+                    margin: 0 1.5rem;
+                }
+            }
+            h1{
+                margin-bottom: 2rem;
+            }
+            h3{
+                margin-bottom: 1.2rem;
+            }
+            .btn-rectangle{
+                padding: 1.12rem 4rem 1.35rem;
+            }
+        }
+    }
+}
+@include respond-below(sm){
+    .slideshow{
+        margin-bottom: 4.84rem;
+
+        .slideshow-img{
+            margin-bottom: 3.7rem;
+        }
+        .slideshow-content{
+            padding-bottom: 9.3rem;
+            .control-carousel{
+                
+                > span{
+                    margin: 0 1.4rem;
+                }
+            }
+            h1{
+                margin-bottom: 2.2rem;
+            }
+            h3{
+                margin-bottom: 1.7rem;
+            }
+        }
+    }
+}

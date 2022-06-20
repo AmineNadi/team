@@ -29,9 +29,9 @@
  
   position: relative;
   display: flex;
-  align-items: center;
   justify-content: space-between;
 
+  
   .instagram-item {
     width: 20%;
     margin: 0 0.6rem;
@@ -69,7 +69,9 @@
 @include respond-below(md){
     .instagram{
         margin: 0 2.3rem 5rem;
-        .instagram-content .instagram-item {
+        .instagram-content {
+            
+            .instagram-item {
             margin: 0 0.36rem;
             & svg{
                 margin-bottom: 1.3rem;
@@ -86,25 +88,40 @@
                     font-size: 1.3rem;
                 }
         }
+    }
 }
+}
+
+@include respond-above(sm){
+    .instagram-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+}
+@include respond-between(sm,md) {
+    .instagram-item{
+        span:last-child{
+            word-break: break-word;
+            padding: 0 20%;
+        }
+    }
 }
 
 @include respond-below(sm){
     .instagram{
-       margin: 6rem 1.5rem;
+       margin: 6rem 1rem;
         .instagram-content{
             flex-wrap: wrap;
              .instagram-item {
-                margin: 0 0.25rem;
-            &:nth-of-type(1),&:nth-of-type(2){
-                display: none;
-            }
+                margin: 0 0.5rem 1rem;
+                flex: 0 0 calc(50% - 10px);
             &.insta-info{
+                order: -1;
                 flex: 100%;
                 margin-bottom: 3rem;
-            }
-            &.insta-img{
-                flex: 1!important;
+                padding: 2rem 0;
             }
             & svg{
                 margin-bottom: 1.3rem;
@@ -118,7 +135,7 @@
             }
         }
             .instagram-header{
-                margin-bottom: 3rem;
+                margin-bottom: 2.5rem;
                 & span{
                     display: none;
                 }

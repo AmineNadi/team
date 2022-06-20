@@ -13,6 +13,28 @@ $(function () {
   $(".select-all").on("click", function () {
     $(".menu-langue").toggleClass("activat");
   });
+  $(".select-l").on("click", function () {
+    $(".dropdown-list-one").toggleClass("up");
+  });
+    
+  });
+
+  $(function() {
+    var header = $(".header-content");
+    var banner =$(".banner")
+  
+    $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+        if (scroll > 40) {
+            header.addClass("scrolled");
+            banner.addClass("scrolled")
+        } else {
+            header.removeClass("scrolled");
+            banner.removeClass("scrolled");
+        }
+    });
+
+
 
   var array = document.querySelectorAll(".links-footer");
 
