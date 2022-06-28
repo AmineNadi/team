@@ -231,6 +231,9 @@
     }
 
   @include respond-below(md) {
+    body.open{
+      overflow: hidden;
+    }
     .header-content{
       position: static;
     }
@@ -254,7 +257,7 @@
       height: calc(100vh - 80px);
       z-index: 1;
       bottom: 0;
-      overflow: hidden;
+      overflow: auto;
   }
     
     nav{
@@ -451,6 +454,9 @@
       list-style: none;
       font-size: 16px;
   }
+  .show.footer-mt{
+    display: none;
+  }
   .show.retour{
     background-color: #fbf9f7;
     text-align: center;
@@ -465,12 +471,6 @@
     margin-left: -50vw;
     margin-right: -50vw;
   }
-  .suive-mt{
-    display: none;
-  }
-  
-  
-  
      .suive-mt {
       display: block;
       width: 100%;
@@ -481,6 +481,15 @@
   
       & ul li {
         padding-bottom: 2rem;
+      }
+      .select-langue{
+
+        .select-all{
+          padding-bottom: 5px;
+        }
+        .menu-langue{
+          position: relative;
+        }
       }
     }
   }

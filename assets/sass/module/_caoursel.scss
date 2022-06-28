@@ -1,0 +1,52 @@
+.slider{
+   overflow: hidden;
+    position: relative;
+}
+.control-carousel{
+    right: 6rem;
+    top: 70%;
+    width: auto;
+    > span{
+        margin: 0 1.39rem;
+    }
+}
+.carousel{
+    width: 100%;
+    position: relative;
+    display: flex;
+    transition: all 0.3s ease;
+}
+.carousel-item{
+   width: 100%;
+   transition: .2s ease;
+    
+    flex-shrink: 0;
+}
+
+@include respond-below(md){
+    .slider{
+      
+    
+    >.control-carousel{
+        right: 0;
+    left: 60%;
+    transform: translate(-50%, 39%);
+    bottom: 0;
+    top: 0;
+    }
+}
+}
+@include respond-below(sm){
+    .slider{
+      
+    
+    >.control-carousel{
+        right: 0;
+        left: 50%;
+        transform: translate(-50%, 32%);
+        bottom: 0;
+        top:0;
+    }
+}
+}
+
